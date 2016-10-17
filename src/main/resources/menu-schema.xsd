@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.training.by/menu"
+        xmlns:tnc="http://www.training.by/menu">
+
+    <element name="dishes">
+        <complexType>
+            <sequence>
+                <element name="dish" type="tnc:Dish" minOccurs="1" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+        <unique name="unique-dish-name">
+            <selector xpath="dish"/>
+            <field xpath="name"/>
+        </unique>
+    </element>
+
+    <complexType name="Dish">
+        <all>
+            <element name="image" type="tnc:NotEmptyAnyUri"/>
+            <element name="name" type="tnc:NotEmptyString"/>
+            <element name="description" type="tnc:NotEmptyString" minOccurs="0"/>
+            <element name="portion" type="tnc:Portion"/>
+            <element name="price" type="tnc:Price">
+                <unique name="unique-price-position-name">
+                    <selector xpath="price-position"/>
+                    <field xpath="@name"/>
+                </unique>
+            </element>
+            <element name="type" type="tnc:DishTypeEnum"/>
+        </all>
+        <attribute name="id" type="ID" use="required"/>
+    </complexType>
+
+    <complexType name="Price">
+        <choice>
+            <element name="value" type="tnc:PositiveDouble"/>
+            <element name="price-position" type="tnc:PricePosition" minOccurs="1" maxOccurs="unbounded"/>
+        </choice>
+    </complexType>
+    
+    <complexType name="PricePosition">
+        <simpleContent>
+            <extension base="tnc:PositiveDouble">
+                <attribute name="name" type="tnc:NotEmptyString" use="required"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+
+    <simpleType name="Portion">
+        <restriction base="string">
+            <pattern value="((\d+)(\/\d+)*)|([1-9][0-9]* шт\.)"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="NotEmptyString">
+        <restriction base="string">
+            <minLength value="1"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="NotEmptyAnyUri">
+        <restriction base="anyURI">
+            <minLength value="1"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="PositiveDouble">
+        <restriction base="double">
+            <minInclusive value="0"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="DishTypeEnum">
+        <restriction base="string">
+            <enumeration value="Холодные закуски"/>
+            <enumeration value="Горячие закуски"/>
+            <enumeration value="Завтраки"/>
+            <enumeration value="Салаты"/>
+            <enumeration value="Супы"/>
+            <enumeration value="Рыбные блюда"/>
+            <enumeration value="Мясные блюда"/>
+            <enumeration value="Гарниры"/>
+            <enumeration value="Блюда на мангале"/>
+            <enumeration value="От шеф-повара"/>
+            <enumeration value="Приложение"/>
+            <enumeration value="Десерт"/>
+        </restriction>
+    </simpleType>
+
+</schema>
+
+
+

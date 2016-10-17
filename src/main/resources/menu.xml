@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<menu:dishes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:menu="http://www.training.by/menu"
+             xsi:schemaLocation="http://www.training.by/menu  menu-schema.xsd">
+
+    <!-- Холодные закуски -->
+
+    <dish id="ID-1">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Ассорти рыбное</name>
+        <description>Слабосоленная форель. семга</description>
+        <portion>100/20/15</portion>
+        <price><value>150</value></price>
+        <type>Холодные закуски</type>
+    </dish>
+
+    <dish id="ID-2">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Тарталетки с красной икрой</name>
+        <description>Тарталетки с красной икрой</description>
+        <portion>50/50</portion>
+        <price><value>150</value></price>
+        <type>Холодные закуски</type>
+    </dish>
+
+    <dish id="ID-3">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Закуска по-русски</name>
+        <description>Кусочки атлантической сельди с отварным картофелем, луком, лимоном и зеленью</description>
+        <portion>70/50/2/10</portion>
+        <price><value>150</value></price>
+        <type>Холодные закуски</type>
+    </dish>
+
+    <dish id="ID-4">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Куринный рулет</name>
+        <description>Куринный рулет собственного производства</description>
+        <portion>100/5</portion>
+        <price><value>150</value></price>
+        <type>Холодные закуски</type>
+    </dish>
+
+    <dish id="ID-5">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Бастурма</name>
+        <description>Вяленная вырезка из говяжьего мяса</description>
+        <portion>50/5</portion>
+        <price><value>150</value></price>
+        <type>Холодные закуски</type>
+    </dish>
+
+    <dish id="ID-6">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Ассорти мясное</name>
+        <description>Нарезка из буженины, бастурмы, куриного рулета собственного произваодства и колбасы</description>
+        <portion>100/30</portion>
+        <price><value>150</value></price>
+        <type>Холодные закуски</type>
+    </dish>
+
+    <dish id="ID-7">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Язык отварной</name>
+        <description>Нарезка нежного говяжьего языка, подается с хреном</description>
+        <portion>80/20/1</portion>
+        <price><value>150</value></price>
+        <type>Холодные закуски</type>
+    </dish>
+
+    <dish id="ID-8">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Ассорти баклажаны</name>
+        <description>Жаренные баклажаны с помидорами</description>
+        <price>
+            <price-position name="с помидорами">150</price-position>
+            <price-position name="с орехами">150</price-position>
+        </price>
+        <portion>150/10</portion>
+        <type>Холодные закуски</type>
+    </dish>
+
+    <dish id="ID-9">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Соленья по-домашнему</name>
+        <description>Маринованные овощи</description>
+        <portion>150/10</portion>
+        <price><value>150</value></price>
+        <type>Холодные закуски</type>
+    </dish>
+
+    <dish id="ID-10">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Бабушкины угощения</name>
+        <description>Ассорти из маринованных грибов</description>
+        <portion>120/20/10</portion>
+        <price><value>150</value></price>
+        <type>Холодные закуски</type>
+    </dish>
+
+    <dish id="ID-11">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Сырная тарелка</name>
+        <description>Сыры Чечел, дор блю, росссийский мраморный</description>
+        <portion>100/5</portion>
+        <price><value>150</value></price>
+        <type>Холодные закуски</type>
+    </dish>
+
+    <dish id="ID-12">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Брынза</name>
+        <description>Рассольный сыр, изготавлвиаемый из овечьего молока</description>
+        <portion>75/5</portion>
+        <price><value>150</value></price>
+        <type>Холодные закуски</type>
+    </dish>
+
+    <dish id="ID-13">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Зелень</name>
+        <description>Кинза, лук, петрушка, укроп, базилик</description>
+        <portion>30</portion>
+        <price><value>150</value></price>
+        <type>Холодные закуски</type>
+    </dish>
+
+    <dish id="ID-14">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Ассорти овощное</name>
+        <description>Свежие помидоры, болгарский перец, огурцы, редис и зелень</description>
+        <portion>150/10</portion>
+        <price><value>150</value></price>
+        <type>Холодные закуски</type>
+    </dish>
+
+    <dish id="ID-15">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Овощной букет</name>
+        <description>Корейская морковь, капуста, фунчоза</description>
+        <portion>150/10</portion>
+        <price><value>150</value></price>
+        <type>Холодные закуски</type>
+    </dish>
+
+    <dish id="ID-16">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Овощи по-армянски</name>
+        <description>Мелко нарезанные свежие помидоры, огурцы, болгарский перец, укроп, базилик, кинза, лист салата, зелень</description>
+        <portion>150/40</portion>
+        <price><value>150</value></price>
+        <type>Холодные закуски</type>
+    </dish>
+
+    <dish id="ID-17">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Сеньор Помидор</name>
+        <description>Помидор, фаршированный сырным соусом</description>
+        <portion>150/1</portion>
+        <price><value>150</value></price>
+        <type>Холодные закуски</type>
+    </dish>
+
+    <dish id="ID-18">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Фестиваль салатов</name>
+        <portion>400/1</portion>
+        <price><value>150</value></price>
+        <type>Холодные закуски</type>
+    </dish>
+
+    <dish id="ID-19">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Оливки, маслины</name>
+        <portion>50</portion>
+        <price><value>150</value></price>
+        <type>Холодные закуски</type>
+    </dish>
+
+    <dish id="ID-20">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Лимон</name>
+        <portion>60</portion>
+        <price><value>150</value></price>
+        <type>Холодные закуски</type>
+    </dish>
+
+    <dish id="ID-21">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Мацони</name>
+        <portion>300</portion>
+        <price><value>150</value></price>
+        <type>Холодные закуски</type>
+    </dish>
+
+
+
+    <!-- Горячие закуски -->
+
+
+
+    <dish id="ID-22">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Лобио с шампиньонами</name>
+        <description>Фасоль с шампиньонами и грецким орехом</description>
+        <portion>105</portion>
+        <price><value>150</value></price>
+        <type>Горячие закуски</type>
+    </dish>
+
+    <dish id="ID-23">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Жульен</name>
+        <portion>120/1</portion>
+        <price>
+            <price-position name="с курицей">145</price-position>
+            <price-position name="с грибами">155</price-position>
+        </price>
+        <type>Горячие закуски</type>
+    </dish>
+
+    <dish id="ID-24">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Ахтамар мясной</name>
+        <description>Сыр, помидоры, зелень, запеенные на мангале в лаваше</description>
+        <portion>1 шт.</portion>
+        <price><value>150</value></price>
+        <type>Горячие закуски</type>
+    </dish>
+
+    <dish id="ID-25">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Сюрприз</name>
+        <portion>1 шт.</portion>
+        <price><value>260</value></price>
+        <type>Горячие закуски</type>
+    </dish>
+
+    <dish id="ID-26">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Креветки</name>
+        <portion>120/30</portion>
+        <price>
+            <price-position name="отварные">135</price-position>
+            <price-position name="жаренные">135</price-position>
+        </price>
+        <type>Горячие закуски</type>
+    </dish>
+
+    <dish id="ID-27">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Мидии по-турецки</name>
+        <description>Мидии, фаршированные сыром и грецким орехом</description>
+        <portion>150/30</portion>
+        <price><value>190</value></price>
+        <type>Горячие закуски</type>
+    </dish>
+
+    <dish id="ID-28">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Эскарго</name>
+        <description>Виноградные улитки, фаршированные по-бургундски</description>
+        <portion>12 шт.</portion>
+        <price><value>190</value></price>
+        <type>Горячие закуски</type>
+    </dish>
+
+
+
+    <!-- Завтраки -->
+
+
+
+    <dish id="ID-30">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Глазунья</name>
+        <description>2 яйца (на выбор: ветчина, сыр, помидоры)</description>
+        <portion>150</portion>
+        <price><value>150</value></price>
+        <type>Завтраки</type>
+    </dish>
+
+    <dish id="ID-31">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Омлет</name>
+        <portion>100</portion>
+        <price><value>150</value></price>
+        <type>Завтраки</type>
+    </dish>
+
+    <dish id="ID-32">
+        <image>http:\\www.training.by\image.jpg</image>
+        <name>Блинчики с мясом</name>
+        <description>Жаренные блинчики с мясом</description>
+        <portion>150</portion>
+        <price><value>150</value></price>
+        <type>Завтраки</type>
+    </dish>
+
+</menu:dishes>
